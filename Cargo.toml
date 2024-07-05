@@ -1,0 +1,13 @@
+[package]
+name = "playdns"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hickory-client = { version = "0.24.1", features = ["dns-over-https", "rustls"] }
+rustls = "0.21.8"
+hickory-proto = "0.24.1"
+tokio = { version = "1.16.1"}
+rustls-platform-verifier = "0.1.1"
